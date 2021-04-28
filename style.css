@@ -1,0 +1,276 @@
+/* GLOBAL CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+button:focus {
+  outline: none;
+}
+
+h2 {
+  font-size: 4.2rem;
+  text-shadow: 1px 1px 14.5px rgb(0, 0, 0);
+}
+h3 {
+  font-size: 2.8rem;
+  text-shadow: 1px 1px 14.5px rgb(0, 0, 0);
+}
+
+li {
+  font-size: 20px;
+}
+a {
+  color: #ffffff;
+  text-decoration: none; /*pour suprimer sousline*/
+}
+body {
+  font-family: "Lobster", cursive;
+}
+/* .header*/
+.drim {
+  background-color: rgba(12, 12, 12);
+  display: flex;
+  color: #fff;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.drim ul {
+  display: flex;
+
+  list-style: none;
+}
+
+.drim ul li a {
+  display: block;
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.drim ul li {
+  float: left;
+  position: relative;
+}
+.drim ul li a:hover {
+  background-color: #fff;
+  opacity: 0.9;
+  color: #000;
+}
+
+.drim ul li:hover ul {
+  display: block;
+}
+
+#logo {
+  flex: 40rem;
+  padding-left: 30px;
+}
+/*hero*/
+
+.par {
+  text-align: center;
+  font-size: 40px;
+  font-family: Bradley Hand, cursive;
+  box-shadow: 1px 1px 13px black;
+  background-color: rgba(12, 100, 19, 0.3);
+
+  padding: 13px;
+}
+
+.hero {
+  min-height: 110vh;
+  background: linear-gradient(rgb(0, 0, 0, 0.2), transparent),
+    url(images/img.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero h2 {
+  font-family: "Pacifico", cursive;
+}
+.hero h3 {
+  padding: 20px;
+  margin-bottom: 10px;
+}
+button {
+  padding: 8px 25px;
+  background: rgb(0, 0, 0);
+  color: #ffffff;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border: none;
+  box-shadow: 1px 2px 14px rgb(0, 0, 0);
+  border-radius: 20px 20px;
+}
+button:hover {
+  background-color: #fff;
+  opacity: 0.9;
+  color: #000;
+  transition: 0.2s;
+}
+
+/* image style */
+.totale {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+/* ------------  */
+.container {
+  position: relative;
+  margin: 30px;
+  margin-left: 30px;
+  width: 350px;
+  height: 200px;
+}
+
+.image {
+  display: block;
+  width: 350px;
+  height: 200px;
+
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+}
+
+.container:hover .overlay {
+  height: 100%;
+  width: auto;
+
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.text {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+/* ---------------- forms -----------------------*/
+.forms {
+  min-height: 100vh;
+  text-align: center;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(images/forms.jpg);
+}
+
+form input:focus {
+  outline: none;
+}
+
+form {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+form .activities input {
+  cursor: pointer;
+}
+form .activities {
+  font-size: 20px;
+  font-family: Consolas;
+}
+
+form .activities h3 {
+  margin: 20px;
+}
+.drole input {
+  margin: 20px;
+  margin-top: 40px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px #000;
+  width: 350px;
+  height: 30px;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 20px;
+  border: none;
+  cursor: pointer;
+}
+#age {
+  padding-left: 10px;
+  width: 50px;
+  height: 25px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px #000;
+  border: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+#sexe input {
+  margin: 10px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+#country {
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 10px;
+  padding-left: 15px;
+  padding: 8px;
+  box-shadow: 1px 1px 10px #000;
+
+  cursor: pointer;
+}
+
+form button {
+  margin: 40px;
+  cursor: pointer;
+  transition: all 1ms;
+}
+button:hover {
+  box-shadow: 1px 1px 15px rgb(0, 0, 0);
+}
+form .wac p {
+  box-shadow: 1px 1px 10px #000;
+  background-color: black;
+  border-radius: 10px;
+  height: 80px;
+  font-size: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+form .titre {
+  position: relative;
+}
+@media (max-width: 800px) {
+  .drim {
+    flex-direction: column;
+    max-height: 130px;
+
+  }
+  .hero button {
+    margin-bottom: 40px;
+  }
+}
